@@ -1,0 +1,87 @@
+.column2 {
+  display: flex;
+}
+.column2 .left {
+  flex: 1;
+  order: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column2 .right {
+  flex: 1;
+  order: 2;
+  padding: 10px;
+}
+
+.column2 ul {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.column2 ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.checkMark {
+  margin-right: 10px;
+  color: #f78a31;
+  font-size: 22px;
+}
+
+.bold {
+  font-weight: 700;
+  color: rgb(255, 128, 0);
+}
+
+.right h4 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .column2 {
+    flex-direction: column;
+  }
+  .column2 ul {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .right h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .right span {
+    font-size: 14px;
+  }
+  .column2 .left {
+    flex: 1;
+    order: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .column2 ul li {
+    font-size: 14px;
+  }
+  .reverse {
+    order: 1;
+  }
+  .reverse2 {
+    order: 2;
+  }
+  .right h4 {
+    font-size: 18px;
+  }
+}

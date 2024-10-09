@@ -1,0 +1,57 @@
+.toTop {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 800;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.toTop a {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(221, 133, 17, 0.8);
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.toTop a:hover {
+  background-color: #ffc800;
+  color: #ffffff;
+}
+.toTop.visible {
+  animation: fadeIn 1s ease forwards;
+  visibility: visible;
+}
+.toTop.hidden {
+  visibility: hidden;
+  animation: fadeOut 0.5s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 959px) {
+  .toTop a {
+    background-color: inherit;
+  }
+}

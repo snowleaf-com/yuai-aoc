@@ -1,0 +1,30 @@
+.column2 {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 32px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  order: 1;
+  padding: 10px;
+}
+.right {
+  flex: 1;
+  order: 2;
+  padding: 10px;
+  align-self: center;
+}
+
+@media (max-width: 959px) {
+  .column2 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+
+}

@@ -1,0 +1,87 @@
+.menu_btn {
+  display: none;
+}
+@media screen and (max-width: 959px) {
+  .menu_btn {
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    z-index: 5000;
+    top: 15px;
+    right: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+  }
+  .menu_btn:hover {
+    cursor: pointer;
+  }
+
+  .menu_btn span {
+    width: 28px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -14px;
+    background-color: rgba(221, 133, 17, 0.8);
+  }
+  .menu_btn span {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    box-shadow: /* 縁取りの設定 */ -1px -1px 0 rgba(242, 246, 247, 0.9),
+      1px -1px 0 rgba(242, 246, 247, 0.9), -1px 1px 0 rgba(242, 246, 247, 0.9),
+      1px 1px 0 rgba(242, 246, 247, 0.9);
+  }
+  .menu_btn span.top {
+    transform: translateY(-9px);
+    -webkit-transform: translateY(-9px);
+    -moz-transform: translateY(-9px);
+  }
+  .menu_btn span.bottom {
+    transform: translateY(9px);
+    -webkit-transform: translateY(9px);
+    -moz-transform: translateY(9px);
+  }
+
+  .menu_btn:hover span.top {
+    transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    -moz-transform: translateY(-11px);
+  }
+  .menu_btn:hover span.bottom {
+    transform: translateY(11px);
+    -webkit-transform: translateY(11px);
+    -moz-transform: translateY(11px);
+  }
+
+  .menu_btn.opened span {
+    background-color: rgba(221, 133, 17, 0.8);
+    box-shadow: none;
+  }
+
+  .menu_btn.opened span.middle {
+    background: rgba(255, 255, 255, 0);
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+  }
+  .menu_btn.opened span.top {
+    transform: rotate(-45deg) translateY(0px);
+    -webkit-transform: rotate(-45deg) translateY(0px);
+    -moz-transform: rotate(-45deg) translateY(0px);
+  }
+  .menu_btn.opened span.bottom {
+    transform: rotate(45deg) translateY(0px);
+    -webkit-transform: rotate(45deg) translateY(0px);
+    -moz-transform: rotate(45deg) translateY(0px);
+  }
+}

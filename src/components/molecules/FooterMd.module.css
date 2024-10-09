@@ -1,0 +1,83 @@
+.footerMd {
+  display: grid;
+  grid-template-columns: 39.3626991565% auto;
+  grid-column-gap: 8.1537019681%;
+  -moz-column-gap: 8.1537019681%;
+  column-gap: 8.1537019681%;
+  align-items: center;
+  align-items: start;
+  margin-bottom: 56px;
+}
+.footerMdSchedule {
+  margin-bottom: 20px;
+}
+.footerCopyright p {
+  padding: 8px 0;
+  text-align: center;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.scheduleTable {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.scheduleTable th,
+.scheduleTable td {
+  position: relative;
+  padding: 0.40625rem 0.5rem;
+  text-align: center;
+}
+.scheduleTable th:first-child,
+.scheduleTable td:first-child {
+  padding-right: 1.125rem;
+  text-align: left;
+}
+.scheduleTable tr {
+  border-bottom: 1px solid;
+}
+.txtMain {
+  color: #f07e91;
+}
+.holiday {
+  font-size: 9px;
+}
+.scheduleIntroduce {
+  text-align: center;
+  font-size: 13px;
+}
+.indentedList {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 959px) {
+  /* スマホ向けスタイル */
+  .footerMd {
+    margin-bottom: 30px;
+    display: block;
+    grid-template-columns: none;
+    grid-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    align-items: stretch;
+  }
+  .footerMdLeft {
+    margin-bottom: 24px;
+  }
+  .footerCopyright p {
+    font-size: 9px;
+  }
+  .scheduleTable {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .indentedList {
+    padding-left: 14px;
+  }
+}

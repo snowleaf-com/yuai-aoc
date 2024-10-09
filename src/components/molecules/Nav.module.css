@@ -1,0 +1,136 @@
+.gNavi {
+  position: absolute;
+  right: 220px;
+  top: 20px;
+  width: auto;
+  margin-left: 200px;
+  display: block;
+  z-index: 1000;
+}
+.gNavi ul li {
+  display: inline;
+}
+
+.gNavi ul li a {
+  width: auto;
+  padding: 10px;
+  line-height: 30px;
+  display: block;
+  color: #111;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  float: left;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow:/* 縁取りの設定 */ -1px -1px 0 rgba(242, 246, 247, 0.9),
+    1px -1px 0 rgba(242, 246, 247, 0.9), -1px 1px 0 rgba(242, 246, 247, 0.9),
+    1px 1px 0 rgba(242, 246, 247, 0.9);
+}
+
+.gNavi li a::before {
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 2px;
+  width: 70%;
+  left: 15%;
+  background-color: rgba(17, 187, 221, 0);
+  content: "";
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.gNavi li a:hover::before {
+  background-color: rgba(221, 133, 17, 0.8);
+  top: 0px;
+  width: 80%;
+  left: 10%;
+}
+
+.gNavi li a:hover {
+  color: rgba(221, 133, 17, 0.8);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gNavi {
+    right: 50%;
+    margin-right: -300px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .gNavi {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 3000;
+    background-color: #f2f6f7;
+    background-color: rgba(242, 246, 247, 0.85);
+    visibility: hidden;
+    padding-left: 10%;
+    margin: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .visible {
+    visibility: visible;
+    animation: fadeIn 0.5s forwards;
+  }
+  .hidden {
+    visibility: hidden;
+    animation: fadeOut 0.5s forwards;
+  }
+
+  .gNavi ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  .gNavi ul li a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .gNavi ul li a::before {
+    display: none;
+  }
+  .gNavi ul li a:hover {
+    color: rgba(221, 133, 17, 0.8);
+  }
+  .gNavi ul li a:hover::before {
+    display: none;
+  }
+}

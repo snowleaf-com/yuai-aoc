@@ -1,0 +1,49 @@
+.btn a {
+  font-size: 16px;
+  color: #e39b4d;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
+  line-height: 24px;
+  padding: 1em 2.6em;
+  clear: both;
+  font-weight: bold;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+}
+.arrow {
+  padding-right: 10px;
+  font-size: 22px;
+}
+.btn a:hover {
+  background-color: #f5f4f3;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .btn a {
+    font-size: 14px;
+  }
+  .arrow {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .btn a {
+    font-size: 12px;
+    padding: 0.5em 5em;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+}

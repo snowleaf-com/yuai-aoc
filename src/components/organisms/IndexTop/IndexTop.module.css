@@ -1,0 +1,189 @@
+/* components/IndexTop.module.css */
+.indexTop {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.topCatch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 560px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -280px;
+  color: #fff;
+  background-color: rgba(221, 133, 17, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 2.4;
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.scrolldown span {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  color: #9e9e9e;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.scrolldown:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffaa00;
+  animation: circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+
+.scrolldown:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 50px;
+  background: #9e9e9e;
+}
+
+/* .delayedShow {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 2s;
+} */
+.hidden {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes circlemove {
+  0% {
+    bottom: 45px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 959px) {
+  /* タブレット向けのスタイル */
+  .topCatch {
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2.4;
+  }
+  .scrolldown {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .topCatch {
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .heading {
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2.4;
+  }
+}

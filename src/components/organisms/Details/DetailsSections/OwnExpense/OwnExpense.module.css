@@ -1,0 +1,116 @@
+.column2 {
+  display: flex;
+}
+.column2 .left {
+  flex: 1;
+  order: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column2 .right {
+  flex: 1;
+  order: 2;
+  padding: 10px;
+}
+
+.column2 ul {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.column2 ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: 700;
+  color: rgb(255, 128, 0);
+}
+
+.right h4 {
+  font-size: 24px;
+  line-height: 1.6;
+}
+.right h4:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.paragraph {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 24px;
+  margin-right: 32px;
+  margin-left: 32px;
+  line-height: 2.4;
+  text-align: center;
+}
+.paragraph:last-child {
+  margin-bottom: 0px;
+}
+
+.ownExpense {
+  max-width: 1200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .column2 {
+    flex-direction: column;
+  }
+  .column2 ul {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .right h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .right span {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+  .column2 .left {
+    flex: 1;
+    order: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraph {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .column2 ul li {
+    font-size: 14px;
+  }
+  .reverse {
+    order: 1;
+  }
+  .reverse2 {
+    order: 2;
+  }
+  .right h4 {
+    font-size: 18px;
+  }
+  .right h4:nth-child(2) {
+    margin-bottom: 8px;
+  }
+}

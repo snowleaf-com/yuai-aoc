@@ -1,0 +1,13 @@
+.footerCopyright p {
+  padding: 8px 0;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .footerCopyright p {
+    font-size: 9px;
+  }
+}

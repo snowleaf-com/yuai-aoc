@@ -1,0 +1,197 @@
+/* styles.css またはグローバルCSSファイル */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* モーダルを最前面に */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* 背景よりもさらに上 */
+}
+
+.modalTitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modalActions {
+  display: flex;
+  margin-top: 20px;
+}
+
+.modalButton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px 20px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e9a320;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 無効化状態のスタイル */
+.modalButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: none; /* 無効化時にはトランジションをなくす */
+}
+
+.column2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.inquiry label {
+  display: block;
+  flex: 0.5;
+}
+
+.inquiry input[type="text"],
+.inquiry input[type="email"],
+.inquiry textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: gray;
+  background-color: rgb(233, 233, 233);
+  flex: 2;
+}
+
+.inputWrap {
+  flex: 2;
+  margin-bottom: 15px;
+}
+.modalButton:hover {
+  background-color: #a33400;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.modalButton.cancel {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.modalButton.cancel:hover {
+  background-color: #a33400;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .column2 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+  .inputWrap {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .inquiry input[type="text"],
+  .inquiry input[type="email"],
+  .inquiry textarea {
+    width: 100%;
+  }
+  .inquiry label {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+  .modalActions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .modalTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .inquiry label {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+  .modalTitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .inquiry input[type="text"],
+  .inquiry input[type="email"],
+  .inquiry textarea {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    color: gray;
+    background-color: rgb(233, 233, 233);
+    flex: 2;
+  }
+  .modalButton {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #e9a320;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,55 @@
+.footerTop {
+  margin-bottom: 72px;
+  text-align: center;
+}
+.footerTxt {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  color: #423231;
+}
+.footerTelLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.footerPhoneFlex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  font-size: 42px;
+  text-decoration: none;
+  color: #423231;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+.footerPhoneNum {
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .footerTop {
+    margin-bottom: 36px;
+  }
+  .footerTxt {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .footer--tel_line {
+    display: block;
+  }
+  .footerPhoneNum {
+    font-size: 32px;
+  }
+  .footerPhoneFlex {
+    font-size: 26px;
+  }
+}

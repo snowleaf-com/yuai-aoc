@@ -1,0 +1,23 @@
+.bold {
+  font-weight: 700;
+  color: rgb(255, 128, 0);
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 2.4;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .paragraph {
+    font-size: 14px;
+    line-height: 2.4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .strengthText {
+    text-align: left;
+  }
+}

@@ -1,0 +1,82 @@
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 50px;
+}
+
+.timelineItem::after {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 60px;
+  bottom: -60px;
+  width: 2px;
+  background-color: #ff9100;
+  /* z-index: 1; */
+}
+
+.timelineItem:last-child::after {
+  display: none;
+}
+
+.timelineCircle {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background-color: #ff9100;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.timelineContent {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timelineContent h2 {
+  font-size: 22px;
+  margin-top: 0;
+  color: #ff9100;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.timelineContent p {
+  text-align: left;
+  margin: 10px 0;
+  color: #333;
+  padding: 0;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+
+}
+
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .timelineCircle {
+    font-size: 18px;
+  }
+  .timelineContent h2 {
+    font-size: 22px;
+  }
+}

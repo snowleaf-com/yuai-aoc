@@ -1,0 +1,5 @@
+.cardLists {
+  display: flex;
+  flex-wrap: wrap;
+}
+

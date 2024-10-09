@@ -1,0 +1,36 @@
+.sectionTitle {
+  font-size: 32px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #111;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  padding-right: 8px;
+  padding-left: 8px;
+  clear: both;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .sectionTitle {
+    font-size: 24px;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    color: #111;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    padding-right: 10px;
+    padding-left: 10px;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+}

@@ -1,0 +1,77 @@
+.card {
+  text-align: center;
+  display: block;
+  width: 33.3%;
+  box-sizing: border-box;
+  padding: 24px;
+}
+.cardLink {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  box-shadow: #333;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+.cardLinkMessage {
+  background-color: #ff9900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 9999px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 10;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cardImg {
+  width: 100%;
+  height: 180px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+}
+.description {
+  color: #111;
+  text-align: center;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.specialDescription {
+  color: #111;
+  text-align: center;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .card {
+    width: 50%;
+    padding: 5px;
+  }
+  .description {
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+  }
+  .specialDescription {
+    font-size: 11px;
+    padding: 10px 0 10px 0;
+  }
+}
+
+

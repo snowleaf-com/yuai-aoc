@@ -1,0 +1,34 @@
+.column2 {
+  display: flex;
+  gap: 32px;
+}
+.left {
+  flex: 1;
+  order: 1;
+  padding: 10px;
+  align-self: center;
+}
+.right {
+  flex: 1;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+@media (max-width: 959px) {
+  .column2 {
+    flex-direction: column;
+  }
+  .reverse1 {
+    order: 1;
+  }
+  .reverse2 {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+
+}

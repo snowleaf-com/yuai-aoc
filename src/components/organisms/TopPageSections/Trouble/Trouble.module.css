@@ -1,0 +1,45 @@
+.troubleTitle {
+  font-size: 24px;
+  position: relative;
+  padding-top: 24px;
+  font-weight: normal;
+  color: #000;
+  font-style: normal;
+  clear: both;
+  line-height: 1.56;
+  letter-spacing: 0.22em;
+}
+
+.troubleText {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  margin-right: 32px;
+  margin-left: 32px;
+  line-height: 2.4;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+  color: rgb(255, 128, 0);
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .troubleText {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .troubleText {
+    text-align: left;
+  }
+}

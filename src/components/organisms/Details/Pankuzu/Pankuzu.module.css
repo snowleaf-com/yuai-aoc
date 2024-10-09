@@ -1,0 +1,59 @@
+.pankuzu {
+  background-color: #ffd781;
+  font-size: 14px;
+  line-height: 30px;
+  color: #423332;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pankuzu ul {
+  width: 90%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+}
+
+.pankuzu li a {
+  text-decoration: none;
+  color: #423332;
+}
+
+.pankuzu li a:hover {
+  color: #fff;
+}
+
+.homeIcon {
+  margin-right: 8px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.arrowIcon {
+  margin: 0 10px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .pankuzu {
+    font-size: 11px;
+  }
+  
+  .homeIcon {
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .arrowIcon {
+    margin: 0 6px;
+    display: inline-block;
+  }
+}

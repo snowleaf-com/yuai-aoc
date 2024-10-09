@@ -1,0 +1,21 @@
+.h3 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #000;
+  font-weight: 500;
+  font-style: normal;
+  clear: both;
+  line-height: 1.56;
+  letter-spacing: 0.22em;
+}
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+
+}

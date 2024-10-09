@@ -1,0 +1,84 @@
+.accordionItem {
+  border-radius: 1rem;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 1.5rem 0.3rem;
+  text-align: left;
+}
+.accordionTitle {
+  font-weight: 500;
+  position: relative;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 0em 1.5em 0em 4em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+.accordionTitle::before {
+  content: "Q.";
+  position: absolute;
+  left: 1em;
+  color: orange;
+  font-weight: bold;
+  font-size: 24px;
+}
+.accordionTitle:hover,
+.accordionTitle.active {
+  background-color: #fff;
+}
+.accordionContent {
+  padding: 0 40px 0 40px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding-top 0.3s ease-out;
+}
+.contentp {
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 16px;
+  margin-top: 0px;
+  margin-right: 24px;
+  margin-left: 24px;
+  text-align: left;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .accordionTitle {
+    font-size: 14px;
+  }
+  .contentp {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .accordionItem {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .accordionContent {
+    padding: 0 10px 0 10px;
+  }
+  .accordionTitle {
+    font-size: 14px;
+  }
+  .accordionTitle::before {
+    font-size: 16px;
+    left: 1.4em;
+  }
+  .contentp {
+    font-size: 12px;
+  }
+}

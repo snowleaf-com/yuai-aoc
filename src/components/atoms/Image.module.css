@@ -1,0 +1,212 @@
+/* イメージエリア */
+.imgArea1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.imgArea2 {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  transform: translate(-42%, -42%);
+}
+.imgArea3 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.imgArea4 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.imgArea5 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* トップロゴ */
+.topLogo {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  height: 44px;
+}
+
+@media screen and (min-width: 1200px) {
+  .topLogo {
+    left: 50%;
+    margin-left: -590px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .topLogo {
+    top: 20px;
+    left: 10px;
+    height: 36px;
+  }
+}
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .topLogo {
+    top: 20px;
+    left: 10px;
+    width: 228px;
+    height: 36px;
+  }
+}
+
+/* LINEロゴ */
+.default-img {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 70px;
+}
+
+.mobile-img {
+  display: none;
+  text-align: center;
+  text-decoration: none;
+  width: 60px;
+}
+
+@media (min-width: 1200px) {
+  /* タブレット向けのスタイル */
+  .default-img {
+    width: 90px;
+  }
+}
+@media (max-width: 959px) {
+  /* タブレット向けのスタイル */
+  .default-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: flex;
+    width: auto;
+    min-height: 50px;
+    align-items: center;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* フッターロゴ */
+.footerLogo {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .footerLogo {
+    width: 200px !important;
+  }
+}
+
+/* フッターLINEロゴ */
+.lineSp {
+  display: none;
+}
+.linePc {
+  display: block;
+  width: 600px;
+}
+@media (max-width: 959px) {
+  /* タブレット・スマホのスタイル */
+  footer .linePc {
+    display: none;
+  }
+  footer .lineSp {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  footer .lineSp {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* お知らせ画像 */
+.newsImg {
+  display: block;
+  margin: 40px auto 40px auto;
+  width: 700px;
+}
+@media (max-width: 959px) {
+  /* タブレット・スマホのスタイル */
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .newsImg {
+    width: 95%;
+  }
+}
+
+/* インスタ画像 */
+.instaImg {
+  width: 100%;
+  height: 100%;
+}
+.instaImg img {
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .instaImg img {
+    object-fit: none;
+  }
+}
+
+/* マップ内ロゴ */
+.mapLogo {
+  width: 160px;
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .mapLogo {
+    width: 100px;
+  }
+}
+
+.symptomImg {
+  width: 200px;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.symptomImg img {
+  object-fit: contain !important;
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .symptomImg {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+.treatImg {
+  width: 90%;
+}
+.treatImg img {
+  border-radius: 20px;
+}
+@media (max-width: 959px) {
+  /* タブレット・スマホのスタイル */
+  .treatImg {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+}

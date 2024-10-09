@@ -1,0 +1,18 @@
+.footerWrap {
+  padding-top: 48px;
+}
+
+@media (max-width: 959px) {
+  /* タブレット向けのスタイル */
+  .footerWrap {
+    padding-top: 180px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+  .footerWrap {
+    padding-top: 100px;
+  }
+}

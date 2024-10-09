@@ -1,0 +1,49 @@
+.footer {
+  background-color: #f5e3e6;
+  padding-top: 8%;
+  padding-right: 20px;
+  padding-left: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 23px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1134.63 158.42"><g fill="%23FFEBCD"><path d="M0 0h1134.63L565.17 111.32Z"/><path d="M0 0v51.38l565.17 107.04 569.46-115.6V0Z" opacity=".66"/></g></svg>');
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 959px) {
+  .footer::before {
+    background-size: 100% 49px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 87px;
+    background-position: 50% 0%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer::before {
+    background-size: 100% calc(2vw + 87px);
+  }
+}

@@ -1,0 +1,12 @@
+.imgArea {
+  position: relative;
+  aspect-ratio: 671 / 467;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向けスタイル */
+  .imgArea {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

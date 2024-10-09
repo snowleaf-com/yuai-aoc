@@ -1,0 +1,172 @@
+.contact {
+  max-width: 1200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 80px;
+}
+.required {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: red;
+  color:#fff;
+  border-radius: 8px;
+  margin-right: 4px;
+  font-size: 12px;
+}
+
+.paragraph {
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 32px;
+  margin-left: 32px;
+  line-height: 2.4;
+  text-align: center;
+}
+.inquiry_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+.inquiry {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.inquiry .inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.inquiry label {
+  display: block;
+  flex: 0.5;
+
+}
+
+.inputWrap {
+  flex: 2;
+  margin-bottom: 15px;
+}
+
+.inquiry input[type="text"],
+.inquiry input[type="email"],
+.inquiry input[type="phone"],
+.inquiry textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f6eddb;
+  box-sizing: border-box;
+
+  flex: 2;
+}
+
+.inquiry input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  /* margin: 0 0 20px 0; */
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e9a320;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.inquiry input[type="submit"]:hover {
+  background-color: #a33400;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.column2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.margin24 {
+  margin-bottom: 24px;
+}
+
+.errorMessage {
+  display: block;
+  color: red;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .paragraph {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  .inputWrap {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .inquiry input[type="text"],
+  .inquiry input[type="email"],
+  .inquiry input[type="phone"],
+  .inquiry textarea {
+    width: 100%;
+  }
+  .inquiry label {
+    display: block;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+  }
+  .inquiry input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #e9a320;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .paragraph {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}

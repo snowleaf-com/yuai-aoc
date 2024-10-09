@@ -1,0 +1,48 @@
+.faq {
+  max-width: 1200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 40px;
+}
+.paragraph {
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 32px;
+  margin-left: 32px;
+  line-height: 2.4;
+  text-align: center;
+}
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 95%;
+}
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .paragraph {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .accordion {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .faq {
+    padding-bottom: 32px;
+  }
+  .paragraph {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .accordion {
+    margin-bottom: 40px;
+  }
+}

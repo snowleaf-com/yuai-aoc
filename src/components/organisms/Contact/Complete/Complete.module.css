@@ -1,0 +1,90 @@
+.contact {
+  max-width: 1200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 80px;
+  height: calc(100vh - 280px);
+  box-sizing: border-box;
+}
+.required {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: red;
+  color:#fff;
+  border-radius: 8px;
+  margin-right: 4px;
+  font-size: 12px;
+}
+
+.paragraph {
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 32px;
+  margin-left: 32px;
+  line-height: 2.4;
+  text-align: center;
+}
+.inquiry_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+.inquiry {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.inquiry .inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.column2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.margin24 {
+  margin-bottom: 24px;
+}
+
+.errorMessage {
+  display: block;
+  color: red;
+}
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+  .paragraph {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+  .paragraph {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}

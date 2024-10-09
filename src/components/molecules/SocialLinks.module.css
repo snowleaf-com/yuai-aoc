@@ -1,0 +1,95 @@
+.hSns {
+  padding: 5px;
+  position: fixed;
+  top: 130px;
+  right: 0px;
+  background-color: rgba(221, 133, 17, 0.8);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  border-radius: 8px 0px 0px 8px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+}
+
+.hSns li a:hover {
+  background-color: #fff;
+  color: rgba(221, 133, 17, 0.8);
+}
+
+.mobileImg {
+  display: none;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  min-height: 50px;
+  align-items: center;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 959px) {
+  /* タブレット向けのスタイル */
+  .hSns {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    top: auto;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding-right: 60px;
+  }
+
+  .mobileImg.visible {
+    animation: fadeIn 1s ease forwards;
+    display: flex;
+  }
+  .hSns.mobileImg.visible {
+    opacity: 1;
+  }
+  .hidden {
+    opacity: 0;
+    animation: fadeOut 0.5s ease forwards;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

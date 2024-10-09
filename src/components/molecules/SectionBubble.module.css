@@ -1,0 +1,67 @@
+.sectionBubble {
+  opacity: 1;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 10%;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  background-size: 26px 26px;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-color: #ffecce;
+  overflow: hidden;
+  position: relative;
+}
+
+.sectionBubble::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1007.63 112.41"><path fill="%23F2F6F7" d="M0 0v11.51c167.94 33.54 503.8 0 503.8 100.9 0-100.9 335.9-67.36 503.83-100.9V0z"/></svg>');
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .sectionBubble::before {
+    background-size: 100% 30px;
+    background-position: 50% 0%;
+  }
+  .sectionBubble {
+    padding-top: 30%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .sectionBubble {
+    margin-top: 24px;
+  }
+  .sectionBubble::before {
+    background-size: 100% 70px;
+    background-position: 50% 0%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sectionBubble::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 70px;
+    background-position: 50% 0%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionBubble::before {
+    background-size: 100% calc(2vw + 70px);
+  }
+}

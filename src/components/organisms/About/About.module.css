@@ -1,0 +1,60 @@
+.about {
+  max-width: 1200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 80px;
+}
+.table {
+  border-collapse: separate; /* collapseからseparateに変更 */
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-spacing: 0; /* セル間のスペースを削除 */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  padding: 1em;
+}
+
+.table th {
+  background-color: #FFD781;
+  color: #2c2c2c;
+  font-weight: bold;
+  text-align: center;
+  width: 25%;
+  min-width: 4em;
+}
+
+/* 角に角丸を適用 */
+.table tr:first-child th:first-child {
+  border-top-left-radius: 15px;
+}
+
+.table tr:first-child td:last-child {
+  border-top-right-radius: 15px;
+}
+
+.table tr:last-child th:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+
+@media screen and (max-width: 959px) {
+  /* タブレット向け */
+
+}
+
+@media (max-width: 768px) {
+  /* スマホ向けスタイル */
+.table {
+  font-size: 13px;
+}
+}

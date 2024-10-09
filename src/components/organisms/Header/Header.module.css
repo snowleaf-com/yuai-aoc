@@ -1,0 +1,109 @@
+/* 全体（スマホ含む） */
+.header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  z-index: 300;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.headerFixed {
+  background-color: rgba(242, 246, 247, 0.9);
+}
+
+.headerTxt {
+  display: block;
+  position: absolute;
+  color: #423332;
+  text-shadow:/* 縁取りの設定 */ -1px -1px 0 rgba(242, 246, 247, 0.9),
+    1px -1px 0 rgba(242, 246, 247, 0.9), -1px 1px 0 rgba(242, 246, 247, 0.9),
+    1px 1px 0 rgba(242, 246, 247, 0.9);
+  top: 5px;
+  left: 40px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.telBtn {
+  display: none;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* ヘッダーのみ1200px以上 */
+  .headerTxt {
+    left: 50%;
+    margin-left: -550px;
+  }
+
+  .g_navi {
+    right: 50%;
+    margin-right: -300px;
+  }
+  .contact {
+    right: 50%;
+    margin-right: -550px;
+  }
+}
+
+@media (max-width: 959px) {
+  /* タブレット向けのスタイル */
+  .telBtn {
+    display: block;
+  }
+  .header {
+    height: 68px;
+  }
+  .headerTxt {
+    top: 2px;
+    left: 40px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #423332;
+    text-shadow:/* 縁取りの設定 */ -1px -1px 0 rgba(242, 246, 247, 0.9),
+      1px -1px 0 rgba(242, 246, 247, 0.9), -1px 1px 0 rgba(242, 246, 247, 0.9),
+      1px 1px 0 rgba(242, 246, 247, 0.9);
+  }
+  .telBtn {
+    /*電話マークを表示*/
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    z-index: 5000;
+    top: 15px;
+    right: 50px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* スマートフォン向けのスタイル */
+}
